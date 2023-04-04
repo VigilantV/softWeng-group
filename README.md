@@ -3,7 +3,7 @@
 <br/>
 <br/>
 
-### Phase 1: Internal Social Media
+### Phase 1: Prototyping an Exclusive Social Media
 <br/>
 <br/>
 
