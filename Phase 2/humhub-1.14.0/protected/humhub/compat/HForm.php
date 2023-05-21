@@ -89,10 +89,8 @@ class HForm extends \yii\base\Component
         $hasErrors = false;
         $this->trigger(self::EVENT_BEFORE_VALIDATE);
 
-        if ($this->primaryModel !== null) {
-            if (!$this->primaryModel->validate()) {
+        if ($this->primaryModel !== null && !$this->primaryModel->validate()) {
                 $hasErrors = true;
-            }
         }
 
         foreach ($this->models as $model) {

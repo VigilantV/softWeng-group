@@ -90,8 +90,9 @@ class UserProfileController extends Controller
         $id = (int) Yii::$app->request->get('id');
 
         $category = ProfileFieldCategory::findOne(['id' => $id]);
-        if ($category == null)
+        if ($category == null) {
             throw new HttpException(500, Yii::t('AdminModule.user', 'Could not load category.'));
+        }
 
         if (count($category->fields) != 0)
             throw new HttpException(500, Yii::t('AdminModule.user', 'You can only delete empty categories!'));

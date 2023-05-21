@@ -24,8 +24,6 @@ use humhub\assets\CoreBundleAsset;
  */
 class AssetManager extends \yii\web\AssetManager
 {
-    private $_published = [];
-
     /**
      * @var bool if true will prevent `defer` on all asset bundle scripts
      * @since 1.5
